@@ -1,30 +1,30 @@
 <template>
     <div class=" w-[335px] ">
-        <div class=" h-[50px] w-[270px] bg-[#feffff] rounded-lg flex items-center px-[15px] shadow-md">
+        <div class=" h-[50px] w-[270px] bg-[#feffff]  shadow-md rounded-lg flex items-center px-[15px] ">
           <div class=" bg-[#cb0e9f] w-[35px] h-[35px] flex justify-center items-center rounded-lg mr-[26px]">
             <img src="/home/building-estate-home-house-real-svgrepo-com.svg" alt="" class=" w-[25px] h-[25px]">
           </div>
           <h1 class=" text-[#5D6B85] text-[18px] font-medium">Dashboard</h1>
         </div>       
-        <button class=" h-[50px] w-[270px] rounded-lg flex items-center px-[15px]">
+        <button class=" h-[50px] w-[270px] focus:bg-[#feffff]  focus:shadow-md rounded-lg flex items-center px-[15px]">
           <div class=" bg-[#ffffff] w-[35px] h-[35px] flex justify-center items-center rounded-lg mr-[15px] shadow-md">
             <img src="/home/square-svgrepo-com.svg" alt="" class=" w-[12px] h-[12px] ">
           </div>
           <h1 class=" text-[#5D6B85] text-[18px]  font-normal">Menu 1</h1>
         </button>                                                                                                                                                      
-        <button class=" h-[50px] w-[270px] rounded-lg flex items-center px-[15px]">
+        <button class=" h-[50px] w-[270px] focus:bg-[#feffff]  focus:shadow-md rounded-lg flex items-center px-[15px]">
           <div class=" bg-[#ffffff] w-[35px] h-[35px] flex justify-center items-center rounded-lg mr-[15px] shadow-md">
             <img src="/home/square-svgrepo-com.svg" alt="" class=" w-[12px] h-[12px]  ">
           </div>
           <h1 class=" text-[#5D6B85] text-[18px]  font-normal">Menu 2</h1>
         </button>                                                                                                                                                      
-        <button class=" h-[50px] w-[270px] rounded-lg flex items-center px-[15px]">
+        <button class=" h-[50px] w-[270px] focus:bg-[#feffff]  focus:shadow-md rounded-lg flex items-center px-[15px]">
           <div class=" bg-[#ffffff] w-[35px] h-[35px] flex justify-center items-center rounded-lg mr-[15px] shadow-md">
             <img src="/home/square-svgrepo-com.svg" alt="" class=" w-[12px] h-[12px]  ">
           </div>
           <h1 class=" text-[#5D6B85] text-[18px]  font-normal">Menu 3</h1>
         </button>                                                                                                                                                      
-        <button class=" h-[50px] w-[270px] rounded-lg flex items-center px-[15px]">
+        <button class=" h-[50px] w-[270px] focus:bg-[#feffff]  focus:shadow-md rounded-lg flex items-center px-[15px]">
           <div class=" bg-[#ffffff] w-[35px] h-[35px] flex justify-center items-center rounded-lg mr-[15px] shadow-md">
             <img src="/home/square-svgrepo-com.svg" alt="" class=" w-[12px] h-[12px]  ">
           </div>
