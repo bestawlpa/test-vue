@@ -85,7 +85,7 @@ export default {
     };
   },
   mounted() {
-    this.fetchDataRandom();
+    this.fetchData();
   },
   computed: {
     paginatedItems() {
@@ -98,16 +98,16 @@ export default {
     },
   },
   methods: {
-    async fetchDataRandom() {
+    async fetchData() {
       try {
         const response = await fetch('https://komgrip.co.th/coincap/assets');
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error('Page Not Found');
         }
         const jsonData = await response.json();
         this.items = jsonData.data;
       } catch (error) {
-        this.error = 'Error fetching data: ' + error.message;
+        this.error = error.message;
         console.error('Error fetching data:', error);
       } finally {
         this.loading = false;

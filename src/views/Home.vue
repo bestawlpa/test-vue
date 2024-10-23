@@ -3,6 +3,12 @@
     <div v-if="loading" class="flex justify-center items-center h-screen">
       <div class="loader"></div>
     </div>
+    <div v-else-if="error" class="flex justify-center items-center h-screen">
+      <div class="text-center">
+        <p class="text-xl font-bold text-red-500">{{ error }}.....</p>
+        
+      </div>
+    </div>
     <div v-else>
       <Header />
       <div class="flex-grow flex w-full h-full pl-[65px] pr-[55px]">
@@ -75,17 +81,17 @@ export default {
       try {
         const response = await fetch('https://komgrip.co.th/coincap/assets');
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error('Page Not Found');
         }
         const jsonData = await response.json();
 
         this.items = jsonData.data;
 
-        
+    
         this.randomItems = this.items.slice(0, 4);
 
       } catch (error) {
-        this.error = 'Error fetching data: ' + error.message;
+        this.error = error.message;
         console.error('Error fetching data:', error);
       } finally {
         this.loading = false; 
