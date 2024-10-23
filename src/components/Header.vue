@@ -6,7 +6,7 @@
             <h1>Komgrip Technologies</h1>
         </div>
     </div>
-    <div class=" w-full h-full flex justify-between items-center pl-[33px] pr-[34px] ">
+    <div class=" w-full h-full flex justify-between items-center pl-[23px] pr-[25px] ">
         <div class=" w-[400px] text-[26px] ">
             <h1 class=" text-[#96a0b2] text-[18px] ">Pages <span class=" text-[#6c757d]">/</span> <span class=" text-[#344866]">Dashbord</span></h1>
             <h1 class=" text-[#344866] text-[20px] font-black">Dashbord</h1>
