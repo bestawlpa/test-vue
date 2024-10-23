@@ -5,6 +5,7 @@
         </div>
         
         <div v-else>
+            <!-- btn-next,btn-previous -->
             <div class="w-full h-[100px] flex justify-between items-center px-8 ">
                 <h1 class="text-[#364667] text-xl font-medium">Cryptocurrencies</h1>
                 <div class="flex w-[150px] justify-between">
@@ -22,10 +23,10 @@
                     <div class="w-[100px] h-[40px] pl-4 flex items-center justify-center">
                         <h1>NO</h1>
                     </div>
-                    <div class="w-[250px] h-[40px] flex items-center justify-center">
+                    <div class="w-[230px] h-[40px] flex items-center justify-start">
                         <h1>NAME</h1>
                     </div>
-                    <div class="w-[100px] h-[40px] flex items-center justify-center">
+                    <div class="w-[65px]  h-[40px] flex items-center justify-center">
                         <h1>SYMBOL</h1>
                     </div>
                     <div class="w-[300px] h-[40px] flex items-center justify-end">
@@ -43,10 +44,10 @@
                     <div class="w-[100px] h-[40px] pl-4 flex items-center justify-center">
                         <h1>{{ item.rank }}.</h1>
                     </div>
-                    <div class="w-[250px] h-[40px] flex items-center justify-center">
+                    <div class="w-[224px] h-[40px] flex items-center justify-start">
                         <h1>{{ item.name }}</h1>
                     </div>
-                    <div class="w-[100px] h-[40px] flex items-center justify-center">
+                    <div class="w-[65px] h-[40px] flex items-center justify-center">
                         <h1>{{ item.symbol }}</h1>
                     </div>
                     <div class="w-[300px] h-[40px] flex items-center justify-end">

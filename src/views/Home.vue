@@ -18,7 +18,7 @@
               <div v-for="random in randomItems" :key="random.id" class=" flex flex-col justify-center w-[230px] h-[100px] text-black bg-[#ffffff] shadow-md rounded-2xl overflow-hidden ">
                 <div class=" flex justify-between px-6">
                   <div>
-                    <h1 class=" text-[12px] font-bold text-[#65748d]">{{ random.name }}</h1>
+                    <h1 class=" text-[15px] font-semibold text-[#65748d]">{{ random.name }}</h1>
                     <h1 class=" text-[20px] font-bold text-[#354567]">${{ parseInt(random.priceUsd).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}</h1>
                   </div>
                   <div class=" w-[50px] h-[50px] bg-gradient-to-tl flex items-center justify-center rounded-lg from-[#8825c2] to-[#f20888] shadow-md">
