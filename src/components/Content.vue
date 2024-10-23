@@ -62,7 +62,7 @@
                         <h1>${{ parseInt(item.priceUsd).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}</h1>
                     </div>
                     <div class="w-[110px] h-[40px] flex items-center justify-end">
-                        <h1 :class="{ 'text-green-500': item.changePercent24Hr > 0, 'text-red-500': item.changePercent24Hr < 0 }">
+                        <h1 :class="{ 'text-[#84d619]': item.changePercent24Hr > 0, 'text-[#eb1110]': item.changePercent24Hr < 0 }">
                             {{ Number(item.changePercent24Hr).toFixed(2) }}%
                         </h1>
                     </div>

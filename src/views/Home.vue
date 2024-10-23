@@ -26,7 +26,7 @@
                   </div>
                 </div>
                 <div class=" px-6">
-                  <h1 class=" text-[12px] font-bold" :class="{ 'text-green-500': random.changePercent24Hr > 0, 'text-red-500': random.changePercent24Hr < 0 }">{{ Number(random.changePercent24Hr).toFixed(2) }}%</h1>
+                  <h1 class=" text-[12px] font-bold" :class="{ 'text-[#84d619]': random.changePercent24Hr > 0, 'text-[#eb1110]': random.changePercent24Hr < 0 }">{{ Number(random.changePercent24Hr).toFixed(2) }}%</h1>
                 </div>
                 
               </div>              
