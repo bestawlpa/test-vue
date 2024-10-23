@@ -6,7 +6,6 @@
     <div v-else-if="error" class="flex justify-center items-center h-screen">
       <div class="text-center">
         <p class="text-xl font-bold text-red-500">{{ error }}.....</p>
-        
       </div>
     </div>
     <div v-else>
@@ -44,7 +43,7 @@
           </div>
           </div>
 
-          <div class=" mt-[50px] pl-[50px] relative -left-[340px]">
+          <div class=" mt-[50px] pl-[110px] relative -left-[340px]">
             <Footer/>
           </div>
         </div>
