@@ -15,12 +15,10 @@
           <Sidebar/>                                                                                                                                               
         </div>
 
-        <div class=" flex flex-col mt-[10px] w-full items-center ">
-
-          <div class=" max-w-[1100px]">
-            <div class=" w-full h-[130px]">
+        <div class=" flex flex-col mt-[10px] w-full items-center justify-between">
+          <div class=" w-full h-[130px]">
             <div class=" flex justify-between">
-              <div v-for="random in randomItems" :key="random.id" class=" flex flex-col justify-center w-[230px] h-[100px] text-black bg-[#ffffff] shadow-md rounded-2xl overflow-hidden ">
+              <div v-for="random in randomItems" :key="random.id" class=" flex flex-col justify-center w-[250px] h-[100px] text-black bg-[#ffffff] shadow-md rounded-2xl overflow-hidden ">
                 <div class=" flex justify-between px-6">
                   <div>
                     <h1 class=" text-[15px] font-semibold text-[#65748d]">{{ random.name }}</h1>
@@ -36,14 +34,12 @@
                 
               </div>              
             </div>
-          </div> 
-
-          <div class=" w-full h-[340px] bg-[#ffffff] shadow-md rounded-2xl flex flex-col overflow-hidden"> 
-            <Content/>
-          </div>
+            <div class=" mt-6 w-full h-[340px] bg-[#ffffff] shadow-md rounded-2xl flex flex-col overflow-hidden"> 
+              <Content/>
+            </div>
           </div>
 
-          <div class=" mt-[50px] pl-[110px] relative -left-[340px]">
+          <div class=" w-full h-[60px] justify-start pl-[30px] pt-[60px]">
             <Footer/>
           </div>
         </div>
