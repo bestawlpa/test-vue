@@ -15,32 +15,34 @@
           <Sidebar/>                                                                                                                                               
         </div>
 
-        <div class=" flex flex-col mt-[10px] w-full items-center justify-between">
-          <div class=" w-full h-[130px]">
-            <div class=" flex justify-between">
-              <div v-for="random in randomItems" :key="random.id" class=" flex flex-col justify-center w-[250px] h-[100px] text-black bg-[#ffffff] shadow-md rounded-2xl overflow-hidden ">
-                <div class=" flex justify-between px-6">
-                  <div>
-                    <h1 class=" text-[15px] font-semibold text-[#65748d]">{{ random.name }}</h1>
-                    <h1 class=" text-[20px] font-bold text-[#354567]">${{ parseInt(random.priceUsd).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}</h1>
+        <div class=" flex flex-col mt-[10px] w-full items-center justify-between">  
+          <div class=" max-w-[1100px] w-full h-full flex flex-col justify-between">
+            <div class=" w-full h-[130px]">
+              <div class=" flex justify-between">
+                <div v-for="random in randomItems" :key="random.id" class=" flex flex-col justify-center w-[250px] h-[100px] text-black bg-[#ffffff] shadow-md rounded-2xl overflow-hidden ">
+                  <div class=" flex justify-between px-6">
+                    <div>
+                      <h1 class=" text-[15px] font-semibold text-[#65748d]">{{ random.name }}</h1>
+                      <h1 class=" text-[20px] font-bold text-[#354567]">${{ parseInt(random.priceUsd).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}</h1>
+                    </div>
+                    <div class=" w-[50px] h-[50px] bg-gradient-to-tl flex items-center justify-center rounded-lg from-[#8825c2] to-[#f20888] shadow-md">
+                      <img src="/home/money-integral-line-svgrepo-com.svg" alt="" class=" w-[25px] h-[25px]">
+                    </div>
                   </div>
-                  <div class=" w-[50px] h-[50px] bg-gradient-to-tl flex items-center justify-center rounded-lg from-[#8825c2] to-[#f20888] shadow-md">
-                    <img src="/home/money-integral-line-svgrepo-com.svg" alt="" class=" w-[25px] h-[25px]">
+                  <div class=" px-6">
+                    <h1 class=" text-[12px] font-bold" :class="{ 'text-[#84d619]': random.changePercent24Hr > 0, 'text-[#eb1110]': random.changePercent24Hr < 0 }">{{ Number(random.changePercent24Hr).toFixed(2) }}%</h1>
                   </div>
-                </div>
-                <div class=" px-6">
-                  <h1 class=" text-[12px] font-bold" :class="{ 'text-[#84d619]': random.changePercent24Hr > 0, 'text-[#eb1110]': random.changePercent24Hr < 0 }">{{ Number(random.changePercent24Hr).toFixed(2) }}%</h1>
-                </div>
-                
-              </div>              
-            </div>
-            <div class=" mt-6 w-full h-[340px] bg-[#ffffff] shadow-md rounded-2xl flex flex-col overflow-hidden"> 
-              <Content/>
-            </div>
-          </div>
+                </div>              
+              </div>
 
-          <div class=" w-full h-[60px] justify-start pl-[30px] pt-[60px]">
-            <Footer/>
+              <div class=" mt-6 w-full h-[340px] bg-[#ffffff] shadow-md rounded-2xl flex flex-col overflow-hidden"> 
+                <Content/>
+              </div>
+            </div>
+
+            <div class=" w-full h-[60px] justify-start pl-[30px] pt-[60px]">
+              <Footer/>
+            </div>
           </div>
         </div>
       </div>
